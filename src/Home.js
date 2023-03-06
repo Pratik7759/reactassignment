@@ -1,12 +1,10 @@
 import React from "react";
-import './Home.css'
-import Navbar from "./Navbar";
+import "./Home.css";
 
-
-export default function Home() {
+export default function Home(props) {
   return (
-    <div>
-      <Navbar></Navbar>
-    </div>
+    <>
+      <h1>Home is here</h1>
+    </>
   );
 }

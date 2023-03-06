@@ -6,23 +6,26 @@ import Contact from "./Contact";
 import Blog from "./Blog";
 import Screenshot from "./Screenshot";
 import Navbar from "./Navbar";
+// import Form from "./Form";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <Home />
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About></About>} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/screenshot" element={<Screenshot />} />
-          <Route path="/home" element={<Navbar />} />
+          {/* <Route path="/home" element={<Navbar />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
   );
 }
-
+<Route path="/"><Home /></Route>
 export default App;

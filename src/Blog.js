@@ -17,12 +17,7 @@ export default function Blog() {
             <div class="fakeimg">Image</div>
             <p>Some text..</p>
           </div>
-          <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg">Image</div>
-            <p>Some text..</p>
-          </div>
+          
         </div>
         <div class="rightcolumn">
           <div class="card">
